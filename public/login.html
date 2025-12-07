@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <title>Catroright · Login</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="headers.css">
+   <script src="js/login.js" defer></script>
+   <script src="js/profile.js" defer></script>
+   <script src="js/not-search.js" defer></script>
+   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+   <link rel="shortcut icon" href="/favicon.ico" />
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+   <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+   <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+   <header class="p-3 mb-3 border-bottom" style="background-color: var(--bs-body-bg);">
+      <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+               <li>
+                  <a href="index.html" class="nav-link px-2 link-body-emphasis">Workshop</a>
+               </li>
+               <li>
+                  <a href="publish.html" class="nav-link px-2 link-body-emphasis">Create own</a>
+               </li>
+               <li>
+                  <a href="#" class="nav-link px-2 link-body-emphasis">Paid content</a>
+               </li>
+            </ul>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+               <input type="search" id="search_input" class="form-control" placeholder="Search..." aria-label="Search" />
+            </form>
+            <div class="dropdown text-end" id="LOGIN_PLACE_B"></div>
+            <a href="login.html" id="LOGIN_PLACE_A"><button class="btn btn-outline-secondary" style="color: white;">Login</button></a>
+         </div>
+      </div>
+   </header>
+   <main>
+      <div class="auth">
+         <div class="login">
+            <h2 style="margin-bottom: 3%;">Login</h2>
+            <label for="username">Username</label>
+            <p class="error-text" id="error-4" style="top: 18%"></p>
+            <input type="text" id="username" placeholder="Remind us of your username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" style="margin-bottom: 6%;" placeholder="You remember him, right?">
+
+            <button id="createAccount">Login to account</button>
+            <div style="text-align: center; width: 100%;">
+               <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+            </div>
+         </div>
+      </div>
+   </main>
+   <hr class="my-4">
+   <div class="container py-3">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center" style="padding-bottom: 3%;">
+         <div class="text-body-secondary">
+            <p>© 2025 Catroright, by <a href="https://github.com/treskunchik" target="_blank" rel="noopener" style="color: var(--bs-secondary-color); text-decoration: underline;">treskunchik</a></p>
+         </div>
+         <div class="d-flex">
+            <a href="https://youtube.com/@uzik-" class="text-body-secondary ms-3" aria-label="YouTube">
+               <i class="fab fa-youtube fa-lg"></i>
+            </a>
+            <a href="https://t.me/uzikpocketcode" class="text-body-secondary ms-3" aria-label="Telegram">
+               <i class="fab fa-telegram fa-lg"></i>
+            </a>
+         </div>
+      </footer>
+   </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
